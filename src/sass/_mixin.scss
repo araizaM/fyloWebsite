@@ -1,0 +1,21 @@
+//breakpoin
+@mixin breakpoint($size) {
+  @if $size == small {
+    @media (min-width: 376px) { 
+      @content; 
+    }
+  }
+}
+section{
+  @include breakpoint(small){
+    background-color: blue;
+  }
+}
+
+//to display image bg
+@mixin bgImg($url){
+  background-image: url($url);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+

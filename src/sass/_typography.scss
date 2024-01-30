@@ -1,0 +1,23 @@
+@use 'mixin.scss' as m;
+@use 'utilities.scss' as u;
+
+h1{
+  font-size: u.to-rem(20);
+  font-weight: var(--FW-bold);
+}
+ul{
+  font-size: u.to-rem(10);
+}
+p {
+  font-size: u.to-rem(14);
+}
+ul,
+p{
+  font-weight: var(--FW-neutral);
+  color: var(--clr-pale-white);
+}
+
+
+@include m.breakpoint(small){
+//change font for desktop
+}

@@ -1,0 +1,21 @@
+@use 'utilities.scss' as u;
+@use 'mixin.scss' as m;
+
+header nav{
+  display: flex;
+  margin-top: u.to-rem(18); 
+  margin-bottom: u.to-rem(39); 
+}
+.header__img{
+  @include m.bgImg('../assets/logo.svg');
+  background-size: cover;
+  min-height: u.to-rem(22);
+  min-width: u.to-rem(73);
+  margin-left: u.to-rem(14);
+} 
+header ul{
+  display: flex;
+}
+header li{
+  margin-right: u.to-rem(19);
+}

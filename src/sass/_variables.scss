@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+  // color
+  --clr-intro: hsl(217, 28%, 15%);
+  --clr-main: hsl(218, 28%, 13%);
+  --clr-footer: hsl(216, 53%, 9%);
+  --clr-testimonials: hsl(219, 30%, 18%);
+  --clr-pale-white: hsl(225, 3%, 76%);
+  --clr-neutral-white: hsl(0, 0%, 100%);
+
+  --clr-CTA: hsl(176, 68%, 64%);
+  --clr-CTA-inside: hsl(198, 60%, 50%);
+  --clr-error: hsl(0, 100%, 63%);
+
+  //14px
+  --FS: 0.875rem;
+  --FF-openSans: "Open Sans", sans-serif;
+  --FF-raleway: "Raleway", sans-serif;
+  //font weight
+  --FW-neutral: 400;
+  --FW-bold: 700;
+}
