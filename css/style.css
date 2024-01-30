@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+body {
+  background-color: var(--clr-main);
+  color: var(--clr-neutral-white);
+  font-family: var(--FF-openSans);
+}
+
+a,
+a:active,
+a:focus {
+  color: inherit;
+  text-decoration: none;
+}
+
+li {
+  text-decoration: none;
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6, ul, a {
+  font-family: var(--FF-raleway);
+}
+
+:root {
+  --clr-intro: hsl(217, 28%, 15%);
+  --clr-main: hsl(218, 28%, 13%);
+  --clr-footer: hsl(216, 53%, 9%);
+  --clr-testimonials: hsl(219, 30%, 18%);
+  --clr-pale-white: hsl(225, 3%, 76%);
+  --clr-neutral-white: hsl(0, 0%, 100%);
+  --clr-CTA: hsl(176, 68%, 64%);
+  --clr-CTA-inside: hsl(198, 60%, 50%);
+  --clr-error: hsl(0, 100%, 63%);
+  --FS: 0.875rem;
+  --FF-openSans: "Open Sans", sans-serif;
+  --FF-raleway: "Raleway", sans-serif;
+  --FW-neutral: 400;
+  --FW-bold: 700;
+}
+
+@media (min-width: 376px) {
+  section {
+    background-color: blue;
+  }
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mx {
+  margin: 0 auto;
+}
+
+.my {
+  margin: auto 0;
+}
+
+.container {
+  min-width: 17.375rem;
+  margin: 0 1.875rem;
+}
+
+h1 {
+  font-size: 1.25rem;
+  font-weight: var(--FW-bold);
+}
+
+ul {
+  font-size: 0.625rem;
+}
+
+p {
+  font-size: 0.875rem;
+}
+
+ul,
+p {
+  font-weight: var(--FW-neutral);
+  color: var(--clr-pale-white);
+}
+
+header nav {
+  display: flex;
+  margin-top: 1.125rem;
+  margin-bottom: 2.4375rem;
+}
+
+.header__img {
+  background-image: url("../assets/logo.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 1.375rem;
+  min-width: 4.5625rem;
+  margin-left: 0.875rem;
+}
+
+header ul {
+  display: flex;
+}
+
+header li {
+  margin-right: 1.1875rem;
+}
+
+.landingPage__img {
+  background-image: url("../assets/illustration-intro.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 88%;
+  min-height: 12.8125rem;
+  margin-bottom: 2.125rem;
+}
+
+.landingPage h1 {
+  margin-bottom: 1.125rem;
+}
