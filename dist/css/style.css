@@ -64,12 +64,6 @@ h1, h2, h3, h4, h5, h6, ul, a {
   --FW-bold: 700;
 }
 
-@media (min-width: 376px) {
-  section {
-    background-color: blue;
-  }
-}
-
 .justify-center {
   justify-content: center;
 }
@@ -95,8 +89,37 @@ h1, h2, h3, h4, h5, h6, ul, a {
 }
 
 .container {
-  min-width: 17.375rem;
-  margin: 0 1.875rem;
+  width: 17.375rem;
+}
+
+@media (min-width: 576px) {
+  .container {
+    width: 21.875rem;
+  }
+}
+@media (min-width: 758px) {
+  .container {
+    width: 36.25rem;
+  }
+  .landingPage p {
+    width: 36.25rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 50rem;
+  }
+  .landingPage p {
+    width: 36.25rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.imgSize {
+  width: 3.75rem;
+  height: 3.5rem;
 }
 
 h1 {
@@ -108,7 +131,8 @@ ul {
   font-size: 0.625rem;
 }
 
-p {
+p,
+a {
   font-size: 0.875rem;
 }
 
@@ -118,39 +142,170 @@ p {
   color: var(--clr-pale-white);
 }
 
+.landingPage h1 {
+  margin-bottom: 1.125rem;
+}
+
+.landingPage p {
+  margin-bottom: 1.875rem;
+}
+
+@media (min-width: 758px) {
+  h1 {
+    font-size: 2.125rem;
+    margin-bottom: to-rem(46);
+  }
+  ul {
+    font-size: 1rem;
+  }
+  p,
+  a {
+    font-size: 1.125rem;
+  }
+  .landingPage h1 {
+    margin-bottom: 1.125rem;
+  }
+  .landingPage p {
+    margin-bottom: 1.875rem;
+  }
+  .landingPage {
+    margin-bottom: 10.625rem;
+  }
+}
+@media (min-width: 992px) {
+  h1 {
+    font-size: 2.75rem;
+  }
+}
 header nav {
   display: flex;
-  margin-top: 1.125rem;
-  margin-bottom: 2.4375rem;
+  margin: 1.125rem 1.1875rem 2.4375rem;
 }
 
 .header__img {
   background-image: url("../assets/logo.svg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
-  min-height: 1.375rem;
+  background-size: 99%;
+  height: 1.375rem;
   min-width: 4.5625rem;
-  margin-left: 0.875rem;
 }
 
 header ul {
   display: flex;
+  justify-content: space-between;
 }
 
-header li {
+header li:not(:last-child) {
   margin-right: 1.1875rem;
 }
 
-.landingPage__img {
-  background-image: url("../assets/illustration-intro.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 88%;
-  min-height: 12.8125rem;
-  margin-bottom: 2.125rem;
+.menuIcon:not(:last-child) {
+  margin-bottom: 5px;
 }
 
-.landingPage h1 {
-  margin-bottom: 1.125rem;
+.menuIcon {
+  width: 20px;
+  height: 3px;
+  background-color: var(--clr-neutral-white);
+  border-radius: 5px;
+}
+
+@media (min-width: 758px) {
+  header nav {
+    margin: 4.6875rem 4.75rem;
+  }
+  .header__img {
+    height: 3.25rem;
+    width: 11.25rem;
+  }
+}
+@media (min-width: 758px) {
+  .menu {
+    display: none;
+  }
+}
+@media (max-width: 757px) {
+  header ul {
+    display: none;
+  }
+}
+.backgroundLandingPage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-color: var(--clr-intro);
+  height: 24.375rem;
+  width: 100%;
+  border: 5px red solid;
+}
+
+.divider {
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/bg-curvy-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-position: bottom;
+}
+
+.landingPage__img {
+  width: 17.3125rem;
+  height: 12.6875rem;
+  margin-bottom: 2.125rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn {
+  padding: 0.9375rem 4.375rem;
+  background-color: var(--clr-CTA);
+  border-radius: 2rem;
+}
+
+@media (min-width: 376px) {
+  .backgroundLandingPage {
+    height: 24.375rem;
+  }
+}
+@media (min-width: 576px) {
+  .backgroundLandingPage {
+    height: 36rem;
+  }
+}
+@media (min-width: 758px) {
+  .backgroundLandingPage {
+    height: 48rem;
+  }
+  .divider {
+    background-image: url("../assets/bg-curvy-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: bottom;
+  }
+  .landingPage__img {
+    width: 22.75rem;
+    height: 17rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 992px) {
+  .backgroundLandingPage {
+    height: 79.375rem;
+  }
+  .landingPage__img {
+    width: 45.5rem;
+    height: 34rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.services__img {
+  background-image: url("../assets/icon-access-anywhere.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
