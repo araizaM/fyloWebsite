@@ -9,6 +9,10 @@
   margin: 0;
 }
 
+html {
+  height: -webkit-fill-available;
+}
+
 body {
   -webkit-font-smoothing: antialiased;
   background-color: var(--clr-main);
