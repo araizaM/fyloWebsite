@@ -230,7 +230,7 @@ a {
     left: 0;
     background-color: var(--clr-pale-white);
     width: 100%;
-    height: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     gap: 20px;
