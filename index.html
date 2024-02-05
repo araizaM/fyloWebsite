@@ -15,7 +15,7 @@
   </head>
   <body class="clr-main">
     <!-- header -->
-    <header>
+    <header class="header">
       <nav class="nav justify-between align-center">
         <a href=""><img class="nav__img" src="dist/assets/logo.svg" alt="logo" /></a>
         <ul class="nav__list">
@@ -23,13 +23,20 @@
           <li class="nav__item">Team</li>
           <li class="nav__item">Sign In</li>
         </ul>
-        <div class="nav__menu">
+        <div class="nav__menu" id="nav-menu" >
           <div class="nav__menuIcon"></div>
           <div class="nav__menuIcon"></div>
           <div class="nav__menuIcon"></div>
         </div>
       </nav>
+      <ul class="mobile hide" id="mobile">
+        <li class="mobile__link">Features</li>
+        <li class="mobile__link">Team</li>
+        <li class="mobile__link">Sign In</li>
+      </ul>
     </header>
+    <!-- navigation for mobile -->
+    
 
     <!-- background divider-->
     <div class="background">
@@ -243,7 +250,7 @@
         </form>
       </div>
 
-      <img class="footer__logo" src="dist/assets/logo.svg" alt="logo" />
+      <div class="footer__logoContainer"><img class="footer__logo" src="dist/assets/logo.svg" alt="logo" /></div>
       <section class="footer__list">
         <section>
           <div class="flex footer__item">
@@ -260,6 +267,8 @@
               possimus animi id sint ad.
             </p>
           </div>
+        </section>
+        <section class="footer__section">
           <div class="flex footer__item">
             <img
               src="dist/assets/icon-phone.svg"
@@ -308,4 +317,5 @@
       </section>
     </footer>
   </body>
+  <script src="dist/js/mobile.js"></script>
 </html>
