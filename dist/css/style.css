@@ -9,14 +9,9 @@
   margin: 0;
 }
 
-html {
-  height: -webkit-fill-available;
-}
-
 body {
   -webkit-font-smoothing: antialiased;
   background-color: var(--clr-main);
-  height: -webkit-fill-available;
 }
 
 ul {
@@ -225,14 +220,15 @@ a {
 }
 @media (max-width: 37.49em) {
   .mobile {
-    position: fixed;
-    top: 3.59375rem;
-    left: 0;
-    background-color: var(--clr-pale-white);
-    width: 100%;
-    height: 100vh;
-    display: flex;
+    position: relative;
     flex-direction: column;
+    top: env(safe-area-inset-top);
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: var(--clr-pale-white);
+    width: 100vw;
+    height: 100dvh;
     gap: 20px;
     padding: 50px;
     opacity: 0;
