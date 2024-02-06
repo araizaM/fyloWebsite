@@ -582,24 +582,24 @@ input::placeholder {
 @keyframes navbarShow {
   0% {
     opacity: 0;
-    height: 20dvh;
+    height: 20vh;
   }
   100% {
     opacity: 1;
-    height: 100dvh;
+    height: 100vh;
   }
 }
 @keyframes navbarHide {
   0% {
     display: flex;
     opacity: 1;
-    height: 100dvh;
+    height: 100vh;
   }
   99% {
     display: none;
   }
   100% {
     opacity: 0;
-    height: 20dvh;
+    height: 20vh;
   }
 }
