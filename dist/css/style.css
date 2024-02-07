@@ -228,10 +228,15 @@ a {
     right: 0;
     background-color: var(--clr-pale-white);
     width: 100vw;
-    height: 100dvh;
+    height: calc(100vh - env(safe-area-inset-bottom));
     gap: 20px;
     padding: 50px;
     opacity: 0;
+  }
+  @supports (height: 1dvh) {
+    .mobile {
+      height: 100dvh;
+    }
   }
   .mobile.show {
     display: flex;
@@ -257,11 +262,11 @@ a {
 }
 .close .nav__menuIcon:first-child {
   transform: rotate(-45deg);
-  translate: 0 4px;
+  transform: translate(0 4px);
 }
 .close .nav__menuIcon:last-child {
   transform: rotate(45deg);
-  translate: 0 -4px;
+  transform: translate(0 -4p) x;
 }
 
 .background {
@@ -529,7 +534,7 @@ a {
   position: absolute;
   top: -150px;
   left: 50%;
-  translate: -50%;
+  transform: translate(-50%);
   background-color: var(--clr-intro);
   padding: 2.1875rem 1.5625rem;
   border-radius: 10px;
@@ -582,24 +587,24 @@ input::placeholder {
 @keyframes navbarShow {
   0% {
     opacity: 0;
-    height: 20vh;
+    height: 20dvh;
   }
   100% {
     opacity: 1;
-    height: 100vh;
+    height: 100dvh;
   }
 }
 @keyframes navbarHide {
   0% {
     display: flex;
     opacity: 1;
-    height: 100vh;
+    height: 100dvh;
   }
   99% {
     display: none;
   }
   100% {
     opacity: 0;
-    height: 20vh;
+    height: 20dvh;
   }
 }
